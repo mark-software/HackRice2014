@@ -1,4 +1,4 @@
-package com.hackrice.Barback;
+package beverages;
 
 import android.net.Uri;
 
@@ -6,13 +6,14 @@ public class Drink {
 
 	private String _name;
 	private String[] _ingredients;
-	private Uri _image;
+	private int _image;
 	private float _ounces;
 	private String _history;
-	private float _cal;
+	private int _cal;
 	private float _timeNeeded;
 	private short _occassion;
 	private int _idNumber;
+	private float _price;
 	
 	public Drink(){}
 	
@@ -31,12 +32,12 @@ public class Drink {
 		this._ingredients = ingredients;
 	}
 
-	public Uri getImage() {
+	public int getImage() {
 		return _image;
 	}
 
-	public void setImage(Uri image) {
-		this._image = image;
+	public void setImage(int imageRsrc) {
+		this._image = imageRsrc;
 	}
 
 	public float getOunces() {
@@ -55,11 +56,11 @@ public class Drink {
 		this._history = history;
 	}
 
-	public float getCal() {
+	public int getCal() {
 		return _cal;
 	}
 
-	public void setCal(float cal) {
+	public void setCal(int cal) {
 		this._cal = cal;
 	}
 
@@ -86,6 +87,14 @@ public class Drink {
 	public void setIDNumber(int idNumber) {
 		this._idNumber = idNumber;
 	}
-	
+
+	public float getPrice() {
+		return this._price;
+	}
+
+	public void setPrice(float price) {
+		// TODO Auto-generated method stub
+		this._price = price;
+	}
 	
 }
